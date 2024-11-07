@@ -1,0 +1,298 @@
+/* Basic Styles */
+body {
+    font-family: Montserrat;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #04b9b9;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+p{
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+h3{
+    color: #04b9b9;
+}
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(34, 18, 177), rgb(211, 87, 107),rgb(93, 95, 238), #a59f9f, #04fdf1d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+li:hover{
+color: #04b9b9;
+font-size: 15px;
+}
+h2{
+    color: #04b9b9;
+}
+
+header {
+    background:  #000030;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+nav{
+    padding: 40px;
+}
+
+
+nav ul {
+    list-style: none;
+    background:  #000030;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.projects {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects .project {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    display: none;
+}
+
+.projects .project.active {
+    display: block;
+}
+
+/* Progress Bars */
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Hover Effects */
+button:hover, .projects .project:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.carousel .testimonial {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel .testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+/* FAQ */
+.faq-item h3 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-item .answer {
+    display: none;
+}
+
+.faq-item.active .answer {
+    display: block;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #f8f6f7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#backToTop.show {
+    display: block;
+}
+/* Container to hold image and text side by side */
+.profile-container {
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    background-color: #000030; /* Background color for contrast */
+    padding: 0px;
+    border-radius: 10px;
+}
+
+/* Styling for the image */
+.profile-image {
+  
+    margin-right: 30px; /* Space between image and text */
+}
+img{
+    border-radius: 60%;
+    width: 500px; /* Set width as needed */
+    height: 500px;
+}
+
+/* Styling for the text */
+.profile-text h1 {
+    color: white;
+    font-size: 65px;
+    margin: 0;
+    font-family: Rowdies;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #04b9b9;
+}
+a:hover{
+    color: #0a003d;
+}
+footer{
+    background-color: #01022c;
+    color: #ffffff;
+    padding: 0%;
+}
+.project-active{
+    border-radius: 0%;
+    margin: 0%;
+}
+
+
+button {
+  background-color: #02ccff;
+  border-radius: 100px;
+  box-shadow: rgba(5, 4, 99, 0.2) 0 -25px 18px -14px inset,rgba(44, 46, 187, 0.15) 0 1px 2px,rgba(24, 4, 114, 0.15) 0 2px 4px,rgba(5, 4, 88, 0.15) 0 4px 8px,rgba(13, 1, 80, 0.15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(1, 0, 56);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 23, 97, 0.35) 0 -25px 18px -14px inset,rgba(44, 53, 187, 0.25) 0 1px 2px,rgba(87, 44, 187, 0.25) 0 2px 4px,rgba(5, 0, 65, 0.562) 0 4px 8px,rgba(2, 4, 90, 0.25) 0 8px 16px,rgba(12, 1, 73, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.fa {  
+    padding: 20px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 50px;  
+    border-radius: 100%;
+    
+ 
+    
+  }  
+  .fa-facebook {  
+    background: #3B5998;  
+    color: white;  
+  }  
+  .fa-twitter {  
+    background: #55ACEE;  
+    color: white;
+  }  
+  .fa-linkedin {  
+    background: #007bb5;  
+    color: white;  
+  }  
+  .fa-instagram {  
+    background-color: #ff008c;  
+    color: white;  
+  }  
+
+  .fa:hover {  
+      opacity: 0.9;  
+  }  
+ li{
+    list-style-type: none;
+   
+    
+ }
+ ul{
+    display: flex;
+ }
+ .container{
+    padding: 0%;
+    margin: 0%;
+ }
+ 
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 480px) {
+    .container {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .container {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 380px){
+    .profile-container{
+        width: fit-content;
+        height: fit-content;
+    }
+  }
